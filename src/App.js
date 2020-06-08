@@ -1,12 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+// import logo from "./logo.svg";
+import './App.css'
+import AppBar from '@material-ui/core/AppBar'
+import Toolbar from '@material-ui/core/Toolbar'
+import Typography from '@material-ui/core/Typography'
+import Button from '@material-ui/core/Button'
 
-function App() {
+function App () {
   return (
     <div className="App">
+      <AppBar position="static">
+        <Toolbar>
+          <Typography variant="h6">
+          Qiitaで自分がいいねした記事をランダムで表示するアプリ
+          </Typography>
+        </Toolbar>
+      </AppBar>
+
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <Button variant="contained" color="primary">
+      表示する！
+        </Button>
+        {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -17,10 +32,10 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a> */}
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
