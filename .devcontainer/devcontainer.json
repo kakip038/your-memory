@@ -4,23 +4,26 @@
   "shutdownAction": "none",
   "appPort": "4000:3000",
   "extensions": [
-    "esbenp.prettier-vscode",
+    // "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
     "eamodio.gitlens",
     "mhutchie.git-graph"
   ],
   "settings": {
     "terminal.integrated.shell.linux": "/bin/bash",
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "editor.tabSize": 2,
     "editor.detectIndentation": false,
     "editor.insertSpaces": true,
-    "[javascript]": {
-      "editor.formatOnSave": false
-    },
-    "[json]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
+    // "[javascript]": {
+    //   "editor.formatOnSave": true
+    // },
+    // "[javascriptreact]": {
+    //   "editor.formatOnSave": true
+    // },
+    // "[json]": {
+    //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // },
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true
     }
