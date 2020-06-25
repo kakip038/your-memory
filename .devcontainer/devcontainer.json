@@ -2,9 +2,9 @@
   "name": "your-memory",
   "dockerFile": "Dockerfile",
   "shutdownAction": "none",
-  "appPort": "4000:3000",
+  "appPort": "4000:4000",
   "extensions": [
-    // "esbenp.prettier-vscode",
+    "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
     "eamodio.gitlens",
     "mhutchie.git-graph"
@@ -15,15 +15,18 @@
     "editor.tabSize": 2,
     "editor.detectIndentation": false,
     "editor.insertSpaces": true,
-    // "[javascript]": {
-    //   "editor.formatOnSave": true
-    // },
-    // "[javascriptreact]": {
-    //   "editor.formatOnSave": true
-    // },
-    // "[json]": {
-    //   "editor.defaultFormatter": "esbenp.prettier-vscode"
-    // },
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true
+    },
+    "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true
+    },
+    "[css]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true
+    },
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true
     }

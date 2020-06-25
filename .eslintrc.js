@@ -20,7 +20,9 @@ module.exports = {
     'prettier/prettier': [
       'error', {
         singleQuote: true,
-        semi: false
-      }],
+        semi: false,
+        arrowParens: "avoid"
+      }
+    ],
   },
 }
